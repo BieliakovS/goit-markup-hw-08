@@ -1,0 +1,18 @@
+.navigation__link:hover,
+.navigation__link:focus,
+.contacts__container:hover>.contacts__mail,
+.contacts__container:focus>.contacts__mail,
+.contacts__container:hover>.contacts__phone,
+.contacts__container:focus>.contacts__phone,
+.location:hover,
+.location:focus,
+.contacts__mail--header:hover,
+.contacts__mail--header:focus,
+.contacts__phone--header:hover,
+.contacts__phone--header:focus,
+.contacts__mail--footer:hover,
+.contacts__mail--footer:focus,
+.contacts__phone--footer:hover,
+.contacts__phone--footer:focus {
+    color: var(--color-accent);
+}

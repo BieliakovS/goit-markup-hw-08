@@ -1,0 +1,28 @@
+*:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation__item,
+.our-skills__item,
+.work-photos__item,
+.our-team__item,
+.filter-list__item,
+.our-projects__item {
+    list-style-type: none;
+}

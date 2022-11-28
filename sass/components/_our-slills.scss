@@ -1,0 +1,37 @@
+.our-skills {
+    @include section;
+    
+    padding-bottom: 0;
+}
+
+.our-skills__item {
+    width: 270px;
+}
+
+.our-skills__icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-color: var(--color-bg-additional);
+    border-radius: 4px;
+}
+
+.our-skills__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.our-skills__text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-main-2);
+}

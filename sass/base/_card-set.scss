@@ -1,0 +1,16 @@
+.our-skills__list,
+.work-photos__list,
+.our-team__list,
+.filter-list,
+.our-projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+}
+
+.our-skills__item,
+.work-photos__item,
+.our-team__item,
+.our-projects__item {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}

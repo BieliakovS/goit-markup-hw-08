@@ -1,0 +1,26 @@
+// utils styles
+@import './utils/variables';
+@import './utils/visualy-hidden';
+@import './utils/mixins';
+
+// base styles
+@import './base/reset';
+@import './base/base';
+@import './base/card-set';
+@import './base/title-set';
+
+// components styles
+@import './components/container';
+@import './components/header';
+@import './components/logo';
+@import './components/navigation';
+@import './components/contacts';
+@import './components/hover-focus_accent-color';
+@import './components/top-content';
+@import './components/our-slills';
+@import './components/work-photos';
+@import './components/our-team';
+@import './components/clients';
+@import './components/footer';
+@import './components/modal';
+@import './components/projects-content';

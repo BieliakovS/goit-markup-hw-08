@@ -1,0 +1,40 @@
+:root {
+    /* fonts */
+    --main-font: "Roboto", sans-serif;
+    --additional-font: "Raleway", sans-serif;
+
+    /* colors */
+    --color-main-1: #212121;
+    --color-main-2: #757575;
+    --color-main-3: #ffffff;
+    --color-main-4: #afb1b8;
+    --color-main-3-transparent: rgba(255, 255, 255, 0.6);
+    --color-additional-1: #000000;
+    --color-additional-1-transparent: rgba(0, 0, 0, 0.15);
+    --color-additional-1-transparent-1: rgba(255, 255, 255, 0.1);
+    --color-additional-1-transparent-2: rgba(255, 255, 255, 0.3);
+    --color-additional-2: #eeeeee;
+    --color-accent: #2196f3;
+    --color-bg-main: #2f303a;
+    --color-bg-additional: #f5f4fa;
+    --color-bg-transparent: rgba(47, 48, 58, 0.4);
+    --color-bg-overlay: rgba(47, 48, 58, 0.8);
+    --color-bg-accent: rgba(33, 150, 243, 0.9);
+    --color-additional-shadow-1: rgba(0, 0, 0, 0.12);
+    --color-additional-shadow-2: rgba(0, 0, 0, 0.14);
+    --color-additional-shadow-3: rgba(0, 0, 0, 0.2);
+    --color-additional-shadow-4: rgba(0, 0, 0, 0.1);
+    --color-additional-shadow-5: rgba(0, 0, 0, 0.08);
+    --color-additional-shadow-6: rgba(0, 0, 0, 0.06);
+    --color-additional-shadow-7: rgba(0, 0, 0, 0.16);
+    --color-placeholder-text: rgba(117, 117, 117, 0.5);
+    --color-input-border: rgba(33, 33, 33, 0.2);
+    --color-header-border: #ececec;
+
+    /* values */
+    --items: 4;
+    --indent: 30px;
+    --modal-index: 100;
+    --cub-buz: cubic-bezier(0.4, 0, 0.2, 1);
+    --trans-dur: 250ms;
+}
