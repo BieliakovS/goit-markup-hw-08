@@ -2,15 +2,17 @@
 .work-photos__list,
 .our-team__list,
 .filter-list,
-.our-projects__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--indent);
+.our-projects__list,
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
 }
 
 .our-skills__item,
 .work-photos__item,
 .our-team__item,
-.our-projects__item {
-    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+.our-projects__item,
+.clients__item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }

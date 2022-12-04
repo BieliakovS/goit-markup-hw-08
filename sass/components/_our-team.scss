@@ -1,79 +1,99 @@
 .our-team {
-    @include section;
+  @include section;
 
-    background-color: var(--color-bg-additional);
+  background-color: var(--color-bg-additional);
 }
 
 .our-team__item {
-    width: 270px;
+  width: 450px;
 
-    background: var(--color-main-3);
-    box-shadow: 0px 1px 3px var(--color-additional-shadow-1),
-        0px 1px 1px var(--color-additional-shadow-2),
-        0px 2px 1px var(--color-additional-shadow-3);
-    border-radius: 0px 0px 4px 4px;
+  background: var(--color-main-3);
+  box-shadow: 0px 1px 3px var(--color-additional-shadow-1),
+    0px 1px 1px var(--color-additional-shadow-2),
+    0px 2px 1px var(--color-additional-shadow-3);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .our-team__container {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  padding-right: 122px;
+  padding-left: 122px;
+
+  @media screen and (min-width: 768px) {
+    padding-right: 74px;
+    padding-left: 74px;
+  }
+
+  @media screen and (min-width: 1200px) {
     padding: 30px 32px;
+  }
 }
 
 .our-team__text-name,
 .our-team__text-job-title {
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .our-team__text-name {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .our-team__text-job-title {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 
-    color: var(--color-main-2);
+  color: var(--color-main-2);
 }
 
 .socials__list {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .socials__item:not(last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .socials__link {
-    display: inline-flex;
-    width: 44px;
-    height: 44px;
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    transition-property: background-color, fill;
-    transition-duration: var(--trans-dur);
-    transition-timing-function: var(--cub-buz);
+  transition-property: background-color, fill;
+  transition-duration: var(--trans-dur);
+  transition-timing-function: var(--cub-buz);
 
-    &:hover,
-        &:focus {
-            background-color: var(--color-accent);
-        }
+  &:hover,
+  &:focus {
+    background-color: var(--color-accent);
+  }
 
-        &:hover>.socials__icon,
-        &:focus>.socials__icon {
+  &:hover > .socials__icon,
+  &:focus > .socials__icon {
     fill: var(--color-main-3);
-}
+  }
 }
 
 .socials__icon {
-    margin: auto;
-    fill: var(--color-main-4);
+  margin: auto;
+  fill: var(--color-main-4);
 
-    transition-property: fill;
-    transition-duration: var(--trans-dur);
-    transition-timing-function: var(--cub-buz);
+  transition-property: fill;
+  transition-duration: var(--trans-dur);
+  transition-timing-function: var(--cub-buz);
 }

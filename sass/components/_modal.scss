@@ -1,247 +1,257 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-    background-color: var(--color-additional-shadow-3);
-    z-index: var(--modal-index);
+  background-color: var(--color-additional-shadow-3);
+  z-index: var(--modal-index);
 
-    transition: opacity 120ms linear, visibility 120ms linear;
+  transition: opacity 120ms linear, visibility 120ms linear;
 }
 
 .backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 450px;
+  min-height: 609px;
+
+  transform: translate(-50%, -50%);
+  transition: transform 400ms linear, opacity 300ms linear;
+
+  background-color: var(--color-main-3);
+  box-shadow: 0px 1px 3px var(--color-additional-shadow-1),
+    0px 1px 1px var(--color-additional-shadow-2),
+    0px 2px 1px var(--color-additional-shadow-3);
+  border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
     min-width: 528px;
     min-height: 581px;
-
-    transform: translate(-50%, -50%);
-    transition: transform 400ms linear, opacity 300ms linear;
-
-    background-color: var(--color-main-3);
-    box-shadow: 0px 1px 3px var(--color-additional-shadow-1),
-        0px 1px 1px var(--color-additional-shadow-2),
-        0px 2px 1px var(--color-additional-shadow-3);
-    border-radius: 4px;
+  }
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -80%);
-    opacity: 0;
+  transform: translate(-50%, -80%);
+  opacity: 0;
 }
 
 .modal-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-    position: absolute;
-    top: 14px;
-    padding: 0;
-    right: 14px;
-    width: 30px;
-    height: 30px;
+  position: absolute;
+  top: 14px;
+  padding: 0;
+  right: 14px;
+  width: 30px;
+  height: 30px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    background: var(--color-main-3);
-    border: 1px solid var(--color-additional-shadow-4);
-    border-radius: 50%;
+  background: var(--color-main-3);
+  border: 1px solid var(--color-additional-shadow-4);
+  border-radius: 50%;
 
-    &:hover .modal__icon,
-        &:focus .modal__icon {
-            fill: var(--color-accent);
-        }
+  &:hover .modal__icon,
+  &:focus .modal__icon {
+    fill: var(--color-accent);
+  }
 }
 
 .modal__icon {
-    fill: var(--color-additional-1);
+  fill: var(--color-additional-1);
 
-    transition-property: fill;
-    transition-duration: var(--trans-dur);
-    transition-timing-function: var(--cub-buz);
+  transition-property: fill;
+  transition-duration: var(--trans-dur);
+  transition-timing-function: var(--cub-buz);
 }
 
 .modal__form {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
 }
 
 .modal__title {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .modal__label {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: var(--color-main-2);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--color-main-2);
 }
 
 .form-field {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .modal__input {
-    height: 40px;
+  height: 40px;
 
-    text-indent: 36px;
+  text-indent: 36px;
 
-    border: 1px solid var(--color-input-border);
-    border-radius: 4px;
+  border: 1px solid var(--color-input-border);
+  border-radius: 4px;
 
-    transition-property: border-color;
-    transition-duration: var(--trans-dur);
-    transition-timing-function: var(--cub-buz);
+  transition-property: border-color;
+  transition-duration: var(--trans-dur);
+  transition-timing-function: var(--cub-buz);
 }
 
 .modal__input:hover,
 .modal__input:focus,
 .modal__txtarea:hover,
 .modal__txtarea:focus {
-    border-color: var(--color-accent);
-    outline: none;
+  border-color: var(--color-accent);
+  outline: none;
 }
 
 .modal__input-icon {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
 
-    transition-property: fill;
-    transition-duration: var(--trans-dur);
-    transition-timing-function: var(--cub-buz);
+  transition-property: fill;
+  transition-duration: var(--trans-dur);
+  transition-timing-function: var(--cub-buz);
 }
 
-.modal__input:hover+.modal__input-icon,
-.modal__input:focus+.modal__input-icon {
-    fill: var(--color-accent);
+.modal__input:hover + .modal__input-icon,
+.modal__input:focus + .modal__input-icon {
+  fill: var(--color-accent);
 }
 
 .modal__txtarea {
-    height: 120px;
-    padding: 12px 16px;
-    margin-bottom: 20px;
-    resize: none;
+  height: 120px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  resize: none;
 
-    border: 1px solid var(--color-input-border);
-    border-radius: 4px;
+  border: 1px solid var(--color-input-border);
+  border-radius: 4px;
 
-    transition-property: border-color;
-    transition-duration: var(--trans-dur);
-    transition-timing-function: var(--cub-buz);
+  transition-property: border-color;
+  transition-duration: var(--trans-dur);
+  transition-timing-function: var(--cub-buz);
 
-    &::placeholder {
-            font-size: 12px;
-            line-height: 1.17;
-            letter-spacing: 0.01em;
-    
-            color: var(--color-placeholder-text);
-        }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: var(--color-placeholder-text);
+  }
 }
 
 .checkbox-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .modal__input-checkbox-text {
-    vertical-align: middle;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+
+  user-select: none;
+
+  color: var(--color-main-2);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-
-    user-select: none;
-
-    color: var(--color-main-2);
+  }
 }
 
 .modal__input-checkbox-link {
-    color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .modal__input-checkbox {
-    transition-property: border-color;
-    transition-duration: var(--trans-dur);
-    transition-timing-function: var(--cub-buz);
+  transition-property: border-color;
+  transition-duration: var(--trans-dur);
+  transition-timing-function: var(--cub-buz);
 }
 
 .visualy-hidden {
-    display: none;
+  display: none;
 }
 
 .modal__checkbox-icon {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .modal__checkbox-icon .checked {
-    opacity: 0;
+  opacity: 0;
 }
 
 .modal__checkbox-icon .checked,
 .modal__checkbox-icon .unchecked {
-    transition-property: opacity;
-    transition-duration: var(--trans-dur);
-    transition-timing-function: var(--cub-buz);
+  transition-property: opacity;
+  transition-duration: var(--trans-dur);
+  transition-timing-function: var(--cub-buz);
 }
 
-.modal__input-checkbox:checked+.modal__checkbox-icon .checked {
-    opacity: 1;
+.modal__input-checkbox:checked + .modal__checkbox-icon .checked {
+  opacity: 1;
 }
 
-.modal__input-checkbox:checked+.modal__checkbox-icon .unchecked {
-    opacity: 0;
+.modal__input-checkbox:checked + .modal__checkbox-icon .unchecked {
+  opacity: 0;
 }
 
 .modal__form-btn-sub {
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
 
-    background-color: var(--color-accent);
-    box-shadow: 0px 4px 4px var(--color-additional-1-transparent);
-    border-radius: 4px;
-    color: var(--color-main-3);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    text-align: center;
-    letter-spacing: 0.06em;
-    border: none;
-    cursor: pointer;
+  background-color: var(--color-accent);
+  box-shadow: 0px 4px 4px var(--color-additional-1-transparent);
+  border-radius: 4px;
+  color: var(--color-main-3);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
 
-    transition-property: scale;
-    transition-duration: var(--trans-dur);
-    transition-timing-function: var(--cub-buz);
+  transition-property: scale;
+  transition-duration: var(--trans-dur);
+  transition-timing-function: var(--cub-buz);
 
-    &:hover,
-        &:focus {
-            scale: 1.03;
-        }
+  &:hover,
+  &:focus {
+    scale: 1.03;
+  }
 }
-

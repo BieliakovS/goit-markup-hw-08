@@ -1,58 +1,80 @@
 .top-content {
-    @include section;
+  @include section;
 
-    text-align: center;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 1600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--color-bg-main);
+  background-image: linear-gradient(
+      var(--color-bg-transparent),
+      var(--color-bg-transparent)
+    ),
+    url(../images/bg-img-top-content.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
     height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-
-    background-color: var(--color-bg-main);
-    background-image: linear-gradient(var(--color-bg-transparent),
-            var(--color-bg-transparent)),
-        url(../images/bg-img-top-content.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  }
 }
 
 .top-content__title {
-    padding: 0 252px;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    font-weight: 900;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-main-3);
+
+  @media screen and (min-width: 480px) {
+    padding: 0 60px;
+
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0 204px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 252px;
+
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--color-main-3);
+  }
 }
 
 .top-content__button {
-    padding: 10px 32px;
+  padding: 10px 32px;
 
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: var(--color-main-3);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--color-main-3);
 
-    background-color: var(--color-accent);
-    cursor: pointer;
-    box-shadow: 0px 4px 4px var(--color-additional-1-transparent);
-    border-radius: 4px;
-    border: none;
+  background-color: var(--color-accent);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px var(--color-additional-1-transparent);
+  border-radius: 4px;
+  border: none;
 
-    transition-property: scale;
-    transition-duration: var(--trans-dur);
-    transition-timing-function: var(--cub-buz);
+  transition-property: scale;
+  transition-duration: var(--trans-dur);
+  transition-timing-function: var(--cub-buz);
 
-    &:hover,
-        &:focus {
-            scale: 1.03;
-        }
+  &:hover,
+  &:focus {
+    scale: 1.03;
+  }
 }
-
