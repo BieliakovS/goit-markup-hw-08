@@ -4,6 +4,7 @@
 
 .clients__list {
   align-items: center;
+  justify-content: center;
 
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
@@ -12,7 +13,9 @@
 }
 
 .clients__item {
-  --item: 2;
+  @media screen and (min-width: 480px) {
+    --item: 2;
+  }
 
   @media screen and (min-width: 768px) {
     --item: 3;

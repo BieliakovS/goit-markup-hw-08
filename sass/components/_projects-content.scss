@@ -50,7 +50,7 @@
 
 .our-projects__item {
   --items: 1;
-  width: 450px;
+  width: 100%;
   box-sizing: border-box;
 
   transition-property: box-shadow;
@@ -67,6 +67,10 @@
   &:hover .our-projects__overlay,
   &:focus .our-projects__overlay {
     transform: translateY(0);
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
   }
 
   @media screen and (min-width: 768px) {

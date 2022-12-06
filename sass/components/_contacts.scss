@@ -33,7 +33,7 @@
   }
 }
 
-.contacts__mail:not(last-child) {
+.contacts__mail:not(:last-child) {
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
   }
@@ -57,7 +57,8 @@
 .contacts__mail,
 .contacts__phone {
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--color-main-2);
   text-decoration: none;
@@ -65,4 +66,9 @@
   transition-property: color;
   transition-duration: var(--trans-dur);
   transition-timing-function: var(--cub-buz);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }

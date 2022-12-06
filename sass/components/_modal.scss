@@ -21,8 +21,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 450px;
-  min-height: 609px;
+  min-width: 50px;
+  min-height: 159px;
 
   transform: translate(-50%, -50%);
   transition: transform 400ms linear, opacity 300ms linear;
@@ -32,6 +32,11 @@
     0px 1px 1px var(--color-additional-shadow-2),
     0px 2px 1px var(--color-additional-shadow-3);
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 450px;
+    min-height: 609px;
+  }
 
   @media screen and (min-width: 1200px) {
     min-width: 528px;
