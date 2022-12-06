@@ -412,8 +412,8 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-bg-transparent)), to(var(--color-bg-transparent))), url(../images/top-content/bg-img-top-content_sm@1x.jpg);
-  background-image: linear-gradient(var(--color-bg-transparent), var(--color-bg-transparent)), url(../images/top-content/bg-img-top-content_sm@1x.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-bg-transparent)), to(var(--color-bg-transparent))), url(./images/top-content/bg-img-top-content_sm@1x.jpg);
+  background-image: linear-gradient(var(--color-bg-transparent), var(--color-bg-transparent)), url(./images/top-content/bg-img-top-content_sm@1x.jpg);
 }
 @media screen and (min-width: 1200px) {
   .top-content {
@@ -423,32 +423,32 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .top-content {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-bg-transparent)), to(var(--color-bg-transparent))), url(../images/top-content/bg-img-top-content_sm@2x.jpg);
-    background-image: linear-gradient(var(--color-bg-transparent), var(--color-bg-transparent)), url(../images/top-content/bg-img-top-content_sm@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-bg-transparent)), to(var(--color-bg-transparent))), url(./images/top-content/bg-img-top-content_sm@2x.jpg);
+    background-image: linear-gradient(var(--color-bg-transparent), var(--color-bg-transparent)), url(./images/top-content/bg-img-top-content_sm@2x.jpg);
   }
 }
 @media screen and (min-width: 481px) {
   .top-content {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-bg-transparent)), to(var(--color-bg-transparent))), url(../images/top-content/bg-img-top-content_md@1x.jpg);
-    background-image: linear-gradient(var(--color-bg-transparent), var(--color-bg-transparent)), url(../images/top-content/bg-img-top-content_md@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-bg-transparent)), to(var(--color-bg-transparent))), url(./images/top-content/bg-img-top-content_md@1x.jpg);
+    background-image: linear-gradient(var(--color-bg-transparent), var(--color-bg-transparent)), url(./images/top-content/bg-img-top-content_md@1x.jpg);
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .top-content {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-bg-transparent)), to(var(--color-bg-transparent))), url(../images/top-content/bg-img-top-content_md@2x.jpg);
-    background-image: linear-gradient(var(--color-bg-transparent), var(--color-bg-transparent)), url(../images/top-content/bg-img-top-content_md@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-bg-transparent)), to(var(--color-bg-transparent))), url(./images/top-content/bg-img-top-content_md@2x.jpg);
+    background-image: linear-gradient(var(--color-bg-transparent), var(--color-bg-transparent)), url(./images/top-content/bg-img-top-content_md@2x.jpg);
   }
 }
 @media screen and (min-width: 769px) {
   .top-content {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-bg-transparent)), to(var(--color-bg-transparent))), url(../images/top-content/bg-img-top-content_lg@1x.jpg);
-    background-image: linear-gradient(var(--color-bg-transparent), var(--color-bg-transparent)), url(../images/top-content/bg-img-top-content_lg@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-bg-transparent)), to(var(--color-bg-transparent))), url(./images/top-content/bg-img-top-content_lg@1x.jpg);
+    background-image: linear-gradient(var(--color-bg-transparent), var(--color-bg-transparent)), url(./images/top-content/bg-img-top-content_lg@1x.jpg);
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .top-content {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-bg-transparent)), to(var(--color-bg-transparent))), url(../images/top-content/bg-img-top-content_lg@2x.jpg);
-    background-image: linear-gradient(var(--color-bg-transparent), var(--color-bg-transparent)), url(../images/top-content/bg-img-top-content_lg@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-bg-transparent)), to(var(--color-bg-transparent))), url(./images/top-content/bg-img-top-content_lg@2x.jpg);
+    background-image: linear-gradient(var(--color-bg-transparent), var(--color-bg-transparent)), url(./images/top-content/bg-img-top-content_lg@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
