@@ -10,14 +10,60 @@
   margin-right: auto;
 
   background-color: var(--color-bg-main);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-image: linear-gradient(
       var(--color-bg-transparent),
       var(--color-bg-transparent)
     ),
-    url(../images/bg-img-top-content.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    url(../../images/top-content/bg-img-top-content_sm@1x.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        var(--color-bg-transparent),
+        var(--color-bg-transparent)
+      ),
+      url(../../images/top-content/bg-img-top-content_sm@2x.jpg);
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(
+        var(--color-bg-transparent),
+        var(--color-bg-transparent)
+      ),
+      url(../../images/top-content/bg-img-top-content_md@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          var(--color-bg-transparent),
+          var(--color-bg-transparent)
+        ),
+        url(../../images/top-content/bg-img-top-content_md@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(
+        var(--color-bg-transparent),
+        var(--color-bg-transparent)
+      ),
+      url(../../images/top-content/bg-img-top-content_lg@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          var(--color-bg-transparent),
+          var(--color-bg-transparent)
+        ),
+        url(../../images/top-content/bg-img-top-content_lg@2x.jpg);
+    }
+  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
